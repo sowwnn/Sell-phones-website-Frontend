@@ -1,0 +1,34 @@
+.footer-content{
+    height: 200px;
+    display: flex;
+    background-color: white;
+}
+.footer-item{
+    flex:1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    
+}
+.footer-content h3{
+    margin-bottom: 20px;
+    color: #c58906;
+}
+.partner-item img{
+    height: 30px;
+
+}
+.partner-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-left: 30px; 
+    padding-right: 30px; 
+    height: 70%;
+}
+
+.contact-list{
+    padding-left: 20px;
+}

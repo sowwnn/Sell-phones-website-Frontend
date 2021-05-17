@@ -1,0 +1,237 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0px;
+}
+#nav-container{
+    display: flex;
+    padding: 10px 40px;
+    justify-content: space-between;
+    border-radius: 0px 0px 20px 20px;
+    background: #dbdbdb98;
+    width: 100%;
+    height: 100px;
+    transition: 0.6s;
+    /* z-index: 1; */
+}
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-logo__logo{
+    height: 50px;
+    width: 67px;
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+.nav-logo__text{
+    /* font-size: 1.6rem; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 90px;
+    background: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+.nav-button {
+    position: relative;
+    flex-direction: row-reverse;
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-right: 0px;
+    justify-content: space-around;
+    width: 50%;
+    height: 40px;
+}
+
+.search-bar{
+    height: 40px;
+    width: 0px;
+    border: 0px;
+    color: rgb(39, 22, 22);
+    background-color: #1bcf3338;
+    border-radius: 40px;
+    transition: 0.4s;
+    text-align: center;
+    margin-right: 10px;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    outline-style: none;
+}
+.nav-button-item{
+    flex: 1;
+}
+.search{
+    flex: 5 ;
+}
+::placeholder{
+    color: #00000065;
+}
+.nav-button-item{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40px;
+}
+.nav-button-item:hover > .search-bar{
+    width: 70%;
+}
+.menu{
+    padding-right: 4px;
+}
+.nav-button-item:hover > .logo{
+    width: 40px;
+    background: radial-gradient(135.42% 135.42% at -4.17% 47.92%, #F9B119 0%, #4CCB87 100%);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.2s;
+    align-items: center;
+    border-radius: 50%;
+}
+#btnmenu{
+    /* border: 1px solid red; */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* z-index: 2; */
+    right: 0px;
+    background: none;
+    border: none;
+}
+#menu{
+    padding-top: 2px;
+    font-weight: bolder;
+}
+#brand{
+    position: relative;
+}
+#lst-brand{
+    display: none;
+    flex-direction: column;
+    height: 170px;
+    width: 70px;
+    padding-top: 0px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;;
+    top: 130px;
+    left: -50px;
+    z-index: 20;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#lst-brand a{
+    color: black;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(173, 172, 255), rgb(251, 124, 255) 50%, rgb(255, 255, 255) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+
+}
+#lst-brand a:hover{
+    background-position: 0 100%;
+}
+#brand:hover>.div-list{
+    display: flex;
+}
+#close{
+    display: none;
+    position: relative;
+    top: var(nav-container);
+    width: 100%;
+    height: 2000px;
+    opacity: 0;
+}
+#nav-line{
+    position: absolute;
+    top: 90px;
+    z-index: 11;
+    width: 0px;
+    height: 2px;
+    margin: 0px auto;
+    background-color: #000000;
+    transition: 0.4s;
+    border-radius: 0px 80% 0px 0px;
+}
+#space{
+    width: 100%;
+    height: 0px;
+    transition: 0.4s;
+}
+#sidebar{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    height: 0px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    visibility: hidden;
+    transition: 0.1s;
+}
+
+.sidebar-item{
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+.sidebar-item a{
+    text-decoration-line: none;
+}
+.contact{
+    height: 250px;
+    width: 40px;
+    background: radial-gradient(135.42% 135.42% at -4.17% 47.92%,#4CCB87 0%, #F9B119  100%);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    top: 1500px;
+    right: 0px;
+    transition: linear 0.5s;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.contact:hover {
+    width: 80%;
+    background: radial-gradient(135.42% 135.42% at -4.17% 47.92%,#4ccb87a6 0%, #f9b219a9  100%);
+}
+.contact-logo{
+    height: 0px;
+    transition: 0.4s;
+}
+.contact h2{
+    color: white;
+    font-size: 2rem;
+    transform: rotate(30deg);
+    position: relative;
+    left: -100px;
+    top: -40px;
+}
+.contact:hover >.contact-logo{
+    height: 200px;
+}
+.account:hover .account-bar{
+    width: 100px;
+}
+.account-bar{
+    width:0px;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 7px;
+    position: relative;
+    top:-4px;
+    right: -10px;
+    transition: 0.4s;
+}
+
+

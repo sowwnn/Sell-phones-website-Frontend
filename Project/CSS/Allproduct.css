@@ -1,0 +1,166 @@
+body{
+    overflow-x: hidden;
+    overflow-y: scroll
+}
+::-webkit-scrollbar{
+    background-color: rgba(4, 255, 255, 0.164);
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: linear-gradient(#29FFB2,rgba(129, 255, 255, 0));
+    box-shadow: inset;
+    border-radius: 30px;
+    box-shadow: -12px 12px 20px rgba(255, 255, 255, 0.58);
+
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient( rgb(33, 92, 255),rgba(129, 255, 255, 0));
+  }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+*{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: 'Staatliches', cursive, Lato;
+  }
+  #nav-container {
+    border-radius: 0px 0px 20px 0px !important;
+  }
+.product__nav{
+    border-right: solid black 4px;
+    position: fixed !important;
+    height:100% !important;
+    padding-top: 7rem !important;
+    padding-bottom: 10rem !important;
+    top: 7.1rem !important;
+  }
+.main{
+    display: flex;
+}
+
+.content{
+    width: 100%;
+    margin-top: 10rem;
+}
+.product{
+    margin-left: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.product-item{
+    display: flex;
+    flex-direction: column;
+    font-size: 20rem;
+    align-items: center;
+}
+/* .product-img {
+    height: 20rem;
+} */
+.product img{
+    width: 20rem;
+    max-width: 100%;
+    margin: auto;
+}
+.product p{
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 1rem;
+    text-align: justify;
+    text-align: center;
+    line-height: 1.5rem;
+    max-width: 15rem;
+    color: rgb(39, 39, 39);
+}
+.product h3{
+
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+    max-height: 70px;
+    width: 100%;
+}
+.product span{
+    font-size: 2rem
+}
+.arrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lst-arrow{
+    width: 30px !important;
+    height: 30px;
+    position: relative;
+    top: 0.7rem;
+    transition: 0.6s;
+}
+.lst-arrow:hover{
+    border: 2px solid sandybrown;
+    border-radius: 50%;
+    box-shadow:-0.3rem 0.3rem 3px;
+}
+.line {
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin-top: 1rem;
+}
+.content-line {
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    border-bottom: 2px solid black;
+    width: 100%;
+   
+}
+.visline{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    width: 100%;
+}
+.lst-quicklook{
+    display: none;
+    transition: 2s;
+    visibility: hidden;
+    opacity: 0;
+}
+.endline{
+    position: relative;
+    margin-bottom: 0rem !important;
+}
+.rec0{
+    position: absolute;
+    transform: rotate(180deg);
+    top: 100px;
+    z-index: -1;
+    height: 1100px;
+    left: 6rem;
+}
+.rec1{
+    position: absolute;
+    right: -15px;
+    top: -980px;
+    z-index: -1;
+    height: 1000px;
+}
+.samsung .product-img{
+    height: 300px;
+    width: auto;
+}
+footer{
+    margin-left: 3%;
+}
+.apple .product-img{
+    width: 13rem ;
+    max-height: 20rem;
+}
+.pixle3 .product-img{
+    width: 14rem !important;
+}
+.pixelall .product-img{
+    width: 17rem;
+}
+a{
+    cursor: pointer;
+}
+
