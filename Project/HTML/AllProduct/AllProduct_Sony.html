@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <link rel="shortcut icon" href="../../../Image/favicon.ico" />
+    <title>Sony - Xperia</title>
+    <meta charset="utf-8">
+    <meta content="smart-phone">
+    <link rel="stylesheet" href="../../CSS/Header.css">
+    <link rel="stylesheet" href="../../CSS/Allproduct.css">
+    <link rel="stylesheet" href="../../CSS/sidebar.css">
+    <link rel="stylesheet" href="../../CSS/Button-effect.css">
+    <link rel="stylesheet" href="../../CSS/Footer.css">
+    <link rel="stylesheet" href="../../CSS/loading.css">
+    
+    <meta name="viewport" content="witdh=divice-witdhn, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../../CSS/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="../../CSS/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <div id="loader-wapper">
+        <div class="loader"></div>
+    </div>
+    <script>
+        window.addEventListener("load",setTimeout(function(event) {
+            var loader = document.getElementById("loader-wapper");
+            loader.style.opacity = "0";
+            setTimeout(loader.style.display = 'none' , 2000)
+        },2000));
+        
+      </script>
+  <header>
+    <div id="nav-container">
+        <div class="nav-logo">
+            <a href="../LanddingPage.html"><img class="nav-logo__logo" src="../../Image/Logo.svg" alt=""></a>
+            <div class="nav-logo__text">
+                <h2 style="color: rgba(82, 239, 3, 1)">R</h2>
+                <h2 style="color: rgba(62, 203, 25, 1)">A</h2>
+                <h2 style="color: rgba(55, 180, 37, 1)">I</h2>
+                <h2 style="color: rgb(37, 180, 149)">N</h2>
+                <h2 style="color: rgb(58, 176, 192);">C</h2>
+                <h2 style="color: rgb(83, 147, 231)">O</h2>
+                <h2 style="color: rgb(116, 136, 228)">A</h2>
+                <h2 style="color: rgb(144, 192, 235);">T</h2>
+            </div>
+        </div>
+        <div class="nav-button">
+            <a class="nav-button-item menu">
+                <img class="logo" id="menu" src="../../Image/menu_duo.svg" alt="">
+                <button id="btnmenu" onclick="Sidebar()">
+                </button>
+            </a>
+            <a class="nav-button-item shopping">
+                <img class="logo " src="../../Image/Buy.svg" alt="">
+                <div class="shoping-list">
+
+                </div>
+            </a>
+            <a class="nav-button-item account" href="../../HTML/SignUp.html">
+                <img class="logo " src="../../Image/Profile.svg" alt="">
+                <img src="../../Image/Login.png" alt="" class="account-bar">
+            </a>
+
+            <div class="nav-button-item search">
+                <img class="logo" src="../../Image/Search.svg" alt="" href="facebook.com">
+                <input class="search-bar " type="text" placeholder="Search something">
+
+            </div>
+        </div>
+        <ul id="sidebar">
+            <li class="sidebar-item" onmouseover="lst_brand()" onmouseout="out_brand()">
+                <a href="" id="brand">
+                    <h3>Brand</h3>
+                </a>
+                <div id="lst-brand" onmouseover="lst_brand()" onmouseout="out_brand()">
+                    <a href="../../HTML/AllProduct/AllProduct_Apple.html">
+                        Apple
+                    </a>
+                    <a href="../../HTML/AllProduct/AllProduct_Samsung.html">
+                        SamSung
+                    </a>
+                    <a href="../../HTML/AllProduct/AllProduct_Google.html">
+                        Google
+                    </a>
+                    <a href="../../HTML/AllProduct/AllProduct_Sony.html">
+                        Sony
+                    </a>
+                    <a href="../../HTML/AllProduct/AllProduct_Xiaomi.html">
+                        XiaoMi
+                    </a>
+                </div>
+            </li>
+            <li class="sidebar-item">
+                <a href="../../HTML/Feedback.html">
+                    <h3>FeedBack</h3>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="">
+                    <h3>Address</h3>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a href="">
+                    <h3>About Us</h3>
+                </a>
+            </li>
+            <script src="../../JS/LP_select.js"> </script>
+        </ul>
+    </div>
+    <div id="nav-line">
+    </div>
+    <button id="close" onclick="Sidebar()">
+
+    </button>
+</header>
+    <div id="space" onresize="Change()">
+    </div>
+    <main>
+        <div class="main">
+            <div class="product__nav">
+                <ul class="category">
+                    <li class="category__item"><a class="category__link" href="../AllProduct/AllProduct_Apple.html">Apple</a></li>
+                    <li class="category__item"><a class="category__link" href="../AllProduct/AllProduct_Google.html">Google</a></li>
+                    <li class="category__item"><a class="category__link" href="../AllProduct/AllProduct_Samsung.html">Samsung</a></li>
+                    <li class="category__item"><a class="category__link" href="../AllProduct/AllProduct_Sony.html">Sony</a></li>
+                    <li class="category__item"><a class="category__link" href="../AllProduct/AllProduct_Xiaomi.html">XiaoMi</a></li>
+    
+                </ul>
+                <div class="social"><span class="social__text">Follow us</span>
+                    <ul class="social__share">
+                        <li class="social__share-item"><a class="social__share-link" href="javascript:void(0)"><i
+                                    class="fab fa-facebook-f"></i></a></li>
+                        <li class="social__share-item"><a class="social__share-link" href="javascript:void(0)"><i
+                                    class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content sony">
+                <div class="product">
+                    <div class="product-item">
+                      <a href="../Product/Sony/Xperia 5 2.html">  <img class="product-img " src="../../Image/Sony/5 2.png" alt=""></a>
+                    </a>
+                        <div class="line"></div>
+                        <div class="price">
+                            <h3>Xperia 5 II</h3>
+                            <h3>$ 1.449</h3>
+                        </div>
+                        <div class="line"></div>
+                        <div class="arrow">
+                            <span>Quick look</span>
+                            <img class="lst-arrow" src="../../Image/arrow-circle-right-solid.svg" alt=""
+                                onclick="More(0)">
+                        </div>
+                        <div class="line"></div>
+                        <div class="lst-quicklook">
+                            <h3>display</h3>
+                            <p>6.1”</p>
+                            <p>OLED FHD+HDR 21:9 CinemaWide™</p>
+                            <h3>Battery</h3>
+                            <p>Typical 4000 mAh</p>
+                            <h3>Camera</h3>
+                            <p>Triple lens camera</p>
+                            <h3>5g</h3>
+                            <h3>Chip set</h3>
+                            <p>Snapdragon™ 865</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="capacity">
+                            <h3>Capacity</h3>
+                            <p>256GB</p>
+                            <p>512GB</p>
+                        </div>
+                        <div class="line"></div>
+                        <button class="btn-effect buy">Buy</button>
+
+                    </div>
+                    <div class="product-item">
+                        <a href="../Product/Sony/Xperia 1 2.html"><img class="product-img " src="../../Image/Sony/1 2.png" alt=""></a>
+                        <div class="line"></div>
+                        <div class="price">
+                            <h3>Xperia 1 II</h3>
+                            <h3>$ 1.999</h3>
+                        </div>
+                        <div class="line"></div>
+                        <div class="arrow">
+                            <span>Quick look</span>
+                            <img class="lst-arrow" src="../../Image/arrow-circle-right-solid.svg" alt=""
+                                onclick="More(1)">
+                        </div>
+                        <div class="line"></div>
+                        <div class="lst-quicklook">
+                            <h3>display</h3>
+                            <p>6.4”</p>
+                            <p>4K HDR 21:9 CinemaWide™</p>
+                            <h3>Battery</h3>
+                            <p>Typical 4000 mAh</p>
+                            <h3>Camera</h3>
+                            <p>Triple lens camera</p>
+                            <h3>5g</h3>
+                            <h3>Chip set</h3>
+                            <p>Snapdragon™ 865</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="capacity">
+                            <h3>Capacity</h3>
+                            <p>256GB</p>
+                            <p>512GB</p>
+                        </div>
+                        <div class="line"></div>
+                        <button class="btn-effect buy">Buy</button>
+                    </div>
+                    <div class="product-item">
+                        <a href="../Product/Sony/Xperia 10 2.html"><img class="product-img" src="../../Image/Sony/10 2.png" alt=""></a>
+                        <div class="line"></div>
+                        <div class="price">
+                            <h3>Xperia 10 II</h3>
+                            <h3>$ 599</h3>
+                        </div>
+                        <div class="line"></div>
+                        <div class="arrow">
+                            <span>Quick look</span>
+                            <img class="lst-arrow" src="../../Image/arrow-circle-right-solid.svg" alt=""
+                                onclick="More(2)">
+                        </div>
+                        <div class="line"></div>
+                        <div class="lst-quicklook">
+                            <h3>display</h3>
+                            <p>6.0”</p>
+                            <p>OLED FHD+HDR 21:9 CinemaWide™</p>
+                            <h3>Battery</h3>
+                            <p>Typical 3600 mAh</p>
+                            <h3>Camera</h3>
+                            <p>Triple lens camera</p>
+                            <h3>5g</h3>
+                            <h3>Chip set</h3>
+                            <p>Snapdragon™ 665</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="capacity">
+                            <h3>Capacity</h3>
+                            <p>64GB</p>
+                            <p>128GB</p>
+                        </div>
+                        <div class="line"></div>
+                        <button class="btn-effect buy">Buy</button>
+                    </div>
+                </div>
+                <div class="content-line">
+                    <img class="rec0" src="../../Image/Rectangle 20.png" alt="">
+                </div>
+                <div class="product">
+                    <div class="product-item">
+                        
+                        <a href="../Product/Sony/Xperia 5 1.html"> <img class="product-img " src="../../Image/Sony/5.png" alt=""></a>
+                        <div class="line"></div>
+                        <div class="price">
+                            <h3>Xperia 5 I</h3>
+                            <h3>$ ---</h3>
+                        </div>
+                        <div class="line"></div>
+                        <div class="arrow">
+                            <span>Quick look</span>
+                            <img class="lst-arrow" src="../../Image/arrow-circle-right-solid.svg" alt=""
+                                onclick="More(3)">
+                        </div>
+                        <div class="line"></div>
+                        <div class="lst-quicklook">
+                            <h3>display</h3>
+                            <p>6.1”</p>
+                            <p>FHD+ HDR OLED (1080 x 2520)</p>
+                            <h3>Battery</h3>
+                            <p>Typical 3140 mAh</p>
+                            <h3>Camera</h3>
+                            <p>2x Optical zoom</p>
+                            <p>Wide angle lens</p>
+                            <h3>5g</h3>
+                            <h3>Chip set</h3>
+                            <p>Snapdragon™ 855</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="capacity">
+                            <h3>Capacity</h3>
+                            <p>256GB</p>
+                            <p>512GB</p>
+                        </div>
+                        <div class="line"></div>
+                        <button class="btn-effect buy">Buy</button>
+
+                    </div>
+                    <div class="product-item">
+                        <a href="../Product/Sony/Xperia 1 1.html">
+                        <img class="product-img " src="../../Image/Sony/1.png" alt="">
+                        </a>
+                        <div class="line"></div>
+                        <div class="price">
+                            <h3>Xperia 1</h3>
+                            <h3>$ ---</h3>
+                        </div>
+                        <div class="line"></div>
+                        <div class="arrow">
+                            <span>Quick look</span>
+                            <img class="lst-arrow" src="../../Image/arrow-circle-right-solid.svg" alt=""
+                                onclick="More(4)">
+                        </div>
+                        <div class="line"></div>
+                        <div class="lst-quicklook">
+                            <h3>display</h3>
+                            <p>6.5”</p>
+                            <p>4K HDR OLED (3840x1644)</p>
+                            <h3>Battery</h3>
+                            <p>Typical 3330 mAh</p>
+                            <h3>Camera</h3>
+                            <p>2x Optical zoom</p>
+                            <p>Wide angle lens</p>
+                            <h3>5g</h3>
+                            <h3>Chip set</h3>
+                            <p>Snapdragon™ 855</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="capacity">
+                            <h3>Capacity</h3>
+                            <p>256GB</p>
+                            <p>512GB</p>
+                        </div>
+                        <div class="line"></div>
+                        <button class="btn-effect buy">Buy</button>
+                    </div>
+                    <div class="product-item">
+                        <a href="../Product/Sony/Xperia 10 1.html"><img class="product-img" src="../../Image/Sony/10.png" alt=""></a>
+                        <div class="line"></div>
+                        <div class="price">
+                            <h3>Xperia 10</h3>
+                            <h3>$ ---</h3>
+                        </div>
+                        <div class="line"></div>
+                        <div class="arrow">
+                            <span>Quick look</span>
+                            <img class="lst-arrow" src="../../Image/arrow-circle-right-solid.svg" alt=""
+                                onclick="More(5)">
+                        </div>
+                        <div class="line"></div>
+                        <div class="lst-quicklook">
+                            <h3>display</h3>
+                            <p>6.0”</p>
+                            <p>FHD+ (2520x1080)</p>
+                            <h3>Battery</h3>
+                            <p>Typical 2870 mAh</p>
+                            <h3>Camera</h3>
+                            <p>Dual Camera</p>
+                            <h3>5g</h3>
+                            <h3>Chip set</h3>
+                            <p>Snapdragon™ 630</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="capacity">
+                            <h3>Capacity</h3>
+                            <p>64GB</p>
+                            <p>128GB</p>
+                        </div>
+                        <div class="line"></div>
+                        <button class="btn-effect buy">Buy</button>
+                    </div>
+                </div>
+                <div class="content-line "></div>
+                     <div class="product">
+                   
+                    <div class="product-item">
+                        <img class="product-img " src="../../Image/Sony/10+.png" alt="">
+                        <a href="../Product/Sony/Xperia 10+.html"></a>
+                        <div class="line"></div>
+                        <div class="price">
+                            <h3>Xperia 10 Plus</h3>
+                            <h3>$ ---</h3>
+                        </div>
+                        <div class="line"></div>
+                        <div class="arrow">
+                            <span>Quick look</span>
+                            <img class="lst-arrow" src="../../Image/arrow-circle-right-solid.svg" alt=""
+                                onclick="More(6)">
+                        </div>
+                        <div class="line"></div>
+                        <div class="lst-quicklook">
+                            <h3>display</h3>
+                            <p>6.5”</p>
+                            <p>FHD+ (2520x1080)</p>
+                            <h3>Battery</h3>
+                            <p>Typical 3000 mAh</p>
+                            <h3>Camera</h3>
+                            <p>Dual Camera</p>
+                            <h3>--</h3>
+                            <h3>Chip set</h3>
+                            <p>Snapdragon™ 636</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="capacity">
+                            <h3>Capacity</h3>
+                            <p>256GB</p>
+                            <p>512GB</p>
+                        </div>
+                        <div class="line"></div>
+                        <button class="btn-effect buy">Buy</button>
+                    </div>
+                    <div class="product-item">
+                        <a href="../Product/Sony/Xperia XZ3.html">
+                            <img class="product-img " src="../../Image/Sony/xz3.png" alt="">
+                        </a>
+                        <div class="line"></div>
+                        <div class="price">
+                            <h3>Xperia xz3</h3>
+                            <h3>$ ---</h3>
+                        </div>
+                        <div class="line"></div>
+                        <div class="arrow">
+                            <span>Quick look</span>
+                            <img class="lst-arrow" src="../../Image/arrow-circle-right-solid.svg" alt=""
+                                onclick="More(7)">
+                        </div>
+                        <div class="line"></div>
+                        <div class="lst-quicklook">
+                            <h3>display</h3>
+                            <p>6.0”</p>
+                            <p>HDR QHD+ OLED (2880x1440)</p>
+                            <h3>Battery</h3>
+                            <p>Typical 3140 mAh</p>
+                            <h3>Camera</h3>
+                            <p>Motion Eye™ camera</p>
+                            <h3>5g</h3>
+                            <h3>Chip set</h3>
+                            <p>Snapdragon™ 845</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="capacity">
+                            <h3>Capacity</h3>
+                            <p>256GB</p>
+                            <p>512GB</p>
+                        </div>
+                        <div class="line"></div>
+                        <button class="btn-effect buy">Buy</button>
+
+                    </div>
+                    <div class="product-item">
+                        <a href="../Product/Sony/Xperia L3.html">
+                        <img class="product-img" src="../../Image/Sony/l3.png" alt="">
+                        </a>
+                        <div class="line"></div>
+                        <div class="price">
+                            <h3>Xperia L3</h3>
+                            <h3>$ ---</h3>
+                        </div>
+                        <div class="line"></div>
+                        <div class="arrow">
+                            <span>Quick look</span>
+                            <img class="lst-arrow" src="../../Image/arrow-circle-right-solid.svg" alt=""
+                                onclick="More(8)">
+                        </div>
+                        <div class="line"></div>
+                        <div class="lst-quicklook">
+                            <h3>display</h3>
+                            <p>5.7”</p>
+                            <p>HD+ (1440 x 720)</p>
+                            <h3>Battery</h3>
+                            <p>Typical 3300 mAh</p>
+                            <h3>Camera</h3>
+                            <p>Dual Camera</p>
+                            <h3>--</h3>
+                            <h3>Chip set</h3>
+                            <p>Mediatek MT6762</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="capacity">
+                            <h3>Capacity</h3>
+                            <p>64GB</p>
+                            <p>128GB</p>
+                        </div>
+                        <div class="line"></div>
+                        <button class="btn-effect buy">Buy</button>
+                    </div>
+                </div>
+                <div class="visline"></div>
+                <div class="content-line endline">
+                    <img class="rec1" src="../../Image/Rectangle 21.png" alt="">
+                </div>
+            </div>
+        </div>
+     
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-item">
+                <h3>RainCoat Company</h3>
+                <img src="../../Image/Logo.svg" alt="">
+            </div>
+            <div class="footer-item">
+                <h3>Contact</h3>
+                <div class="contact-list">
+                    <p>Address: Nowhere/...</p><br>
+                    <p>Phone: 0123023213</p><br>
+                    <p>Email: raincoat@gmail.com</p><br>
+                    <p>Fax: 0123023213</p><br>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3>Partner</h3>
+                <div class="partner-item">
+                    <img src="../../Image/Brand-LOGO/apple-2 1.svg" alt="" style="margin-left: 1px;">
+                   <img src="../../Image/Brand-LOGO/sony-2.svg" alt="">
+                </div>
+                <div class="partner-item">
+                    <img src="../../Image/Brand-LOGO/google-2.svg" alt="" style="margin-left: 3px;">
+                    <img src="../../Image/Brand-LOGO/samsung-2.svg" alt="">
+                </div>
+                <div class="partner-item">
+                    <img src="../../Image/Apple/logo-2.png" alt="">
+                    <img src="../../Image/Brand-LOGO/xiaomi-2.svg" alt="">
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3>SUPPORT</h3>
+                <div class="partner-item">
+                    <img src="../../Image/Visa.png" alt="" style="margin-left: 1px;">
+                    <img src="../../Image/mastercard.png" alt="" style="margin-left: 1px;">
+                </div>  
+                <div class="partner-item">
+                    <img src="../../Image/Paypal.png" alt="" style="margin-left: 3px;">
+                    <img src="../../Image/payoo-logo.png" alt="">
+                </div>
+                <div class="partner-item">
+                    <img src="../../Image/MoMo_Logo.png" alt="">
+                    <img src="../../Image/ggpay.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../JS/allproduct.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../../JS/LP_slide.js"></script>
+    <script src="../../JS/LP_selectbrand.js"></script>
+</body>
+
+</html>
