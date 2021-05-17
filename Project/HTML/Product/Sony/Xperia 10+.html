@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="../../../Image/favicon.ico" />
+    <title>Google - Xperia 10 II</title>
+    <link rel="stylesheet" href="../../../CSS/Product.css">
+    <link rel="stylesheet" href="../../../CSS/Header.css">
+    <link rel="stylesheet" href="../../../CSS/sidebar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../CSS/Button-effect.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../../../CSS/swiper/swiper-bundle.css"> -->
+    <link rel="stylesheet" href="../../../CSS/swiper/swiper-bundle.min.css">
+</head>
+
+<body class="sony">
+       <header>
+        <div id="nav-container">
+            <div class="nav-logo">
+                <a href="../../../HTML/LanddingPage.html"><img class="nav-logo__logo" src="../../../Image/Logo.svg" alt=""></a>
+                <div class="nav-logo__text">
+                    <h2 style="color: rgba(82, 239, 3, 1)">R</h2>
+                    <h2 style="color: rgba(62, 203, 25, 1)">A</h2>
+                    <h2 style="color: rgba(55, 180, 37, 1)">I</h2>
+                    <h2 style="color: rgb(37, 180, 149)">N</h2>
+                    <h2 style="color: rgb(58, 176, 192);">C</h2>
+                    <h2 style="color: rgb(83, 147, 231)">O</h2>
+                    <h2 style="color: rgb(116, 136, 228)">A</h2>
+                    <h2 style="color: rgb(144, 192, 235);">T</h2>
+                </div>
+            </div>
+            <div class="nav-button">
+                <a class="nav-button-item menu">
+                    <img class="logo" id="menu" src="../../../Image/menu_duo.svg" alt="">
+                    <button id="btnmenu" onclick="Sidebar()">
+                    </button>
+                </a>
+                <a class="nav-button-item shopping">
+                    <img class="logo " src="../../../Image/Buy.svg" alt="">
+                    <div class="shoping-list">
+    
+                    </div>
+                </a>
+                <a class="nav-button-item account" href="../../../HTML/SignUp.html">
+                    <img class="logo " src="../../../Image/Profile.svg" alt="">
+                    <img src="../../../Image/Login.png" alt="" class="account-bar">
+                </a>
+    
+                <div class="nav-button-item search">
+                    <img class="logo" src="../../../Image/Search.svg" alt="" href="facebook.com">
+                    <input class="search-bar " type="text" placeholder="Search something">
+    
+                </div>
+            </div>
+            <ul id="sidebar">
+                <li class="sidebar-item" onmouseover="lst_brand()" onmouseout="out_brand()">
+                    <a href="" id="brand">
+                        <h3>Brand</h3>
+                    </a>
+                    <div id="lst-brand" onmouseover="lst_brand()" onmouseout="out_brand()">
+                        <a href="../../../HTML/AllProduct/AllProduct_Apple.html">
+                            Apple
+                        </a>
+                        <a href="../../../HTML/AllProduct/AllProduct_Samsung.html">
+                            SamSung
+                        </a>
+                        <a href="../../../HTML/AllProduct/AllProduct_Google.html">
+                            Google
+                        </a>
+                        <a href="../../../HTML/AllProduct/AllProduct_Sony.html">
+                            Sony
+                        </a>
+                        <a href="../../../HTML/AllProduct/AllProduct_Xiaomi.html">
+                            XiaoMi
+                        </a>
+                    </div>
+                </li>
+                <li class="sidebar-item">
+                    <a href="../../../HTML/Feedback.html">
+                        <h3>FeedBack</h3>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="">
+                        <h3>Address</h3>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="">
+                        <h3>About Us</h3>
+                    </a>
+                </li>
+                <script src="../../../JS/LP_select.js"> </script>
+            </ul>
+        </div>
+        <div id="nav-line">
+        </div>
+        <button id="close" onclick="Sidebar()">
+    
+        </button>
+    </header>
+    <div id="space">
+    </div>
+    <div class="content">
+        <div class="product__nav">
+            <ul class="category">
+                <li class="category__item"><a class="category__link"
+                        href="../../AllProduct/AllProduct_Apple.html">Apple</a></li>
+                <li class="category__item"><a class="category__link"
+                        href="../../AllProduct/AllProduct_Google.html">Google</a></li>
+                <li class="category__item"><a class="category__link"
+                        href="../../AllProduct/AllProduct_Samsung.html">Samsung</a></li>
+                <li class="category__item"><a class="category__link"
+                        href="../../AllProduct/AllProduct_Sony.html">Sony</a></li>
+                <li class="category__item"><a class="category__link"
+                        href="../../AllProduct/AllProduct_Xiaomi.html">XiaoMi</a></li>
+
+            </ul>
+            <div class="social"><span class="social__text">Follow us</span>
+                <ul class="social__share">
+                    <li class="social__share-item"><a class="social__share-link" href="javascript:void(0)"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__share-item"><a class="social__share-link" href="javascript:void(0)"><i
+                                class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="quicklook">
+            <div class="quicklook-item">
+                <span class="ql1">6.1"</span>
+                <p>OLED FHD+HDR 21:9 CinemaWide</p>
+            </div>
+            <div class="quicklook-item">
+                <img class="ql1" src="../../../Image/data-transfer.svg" alt="">
+                <p>5G capable</p>
+            </div>
+            <div class="quicklook-item">
+                <img class="ql1" src="../../../Image/camera android app aplication phone.svg" alt="">
+                <p>
+                    Triple lens camera
+                </p>
+            </div>
+            <div class="quicklook-item">
+                <img class="ql1" src="../../../Image/cpu.svg" alt="">
+                <p>Qualcomm® Snapdragon™ 865 <br>
+            </div>
+            <div class="quicklook-item">
+                <span class="ql1">2x</span>
+                <p>Optical zoom range</p>
+            </div>
+
+            <div class="quicklook-item">
+                <img class="ql1" src="../../../Image/battery 1.svg" alt="">
+                Typical 4000 mAh
+            </div>
+            <div class="quicklook-item">
+                <img class="ql1" src="../../../Image/water-drop.svg" alt="">
+                <p>Water resistant to a depth of 2 meters for up to 30 minutes</p>
+            </div>
+        </div>
+        <div id="product">
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="../../../Image/Sony/10 2.png"
+                            alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../../Image/Sony/10 2.png"
+                        alt="">
+                    </div>
+                   
+
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="circle" style="background: #0e0e0e;"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="circle" style="background: #ffffff;"></div>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="name-price">
+                <h3 class="price">$ 499</h3>
+                <h3 class="name">Xperia 10 II</h3>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script src="../../../JS/PR_slide 2.js"> </script>
+        </div>
+    </div>
+    <div class="btn-effect">Buy</div>
+    <script src="../../../JS/PR_slide 2.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
