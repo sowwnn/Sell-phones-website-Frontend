@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <link rel="shortcut icon" href="../../../Image/favicon.ico" />
+    <title>Landding Page</title>
+    <meta charset="utf-8">
+    <meta content="smart-phone">
+    <link rel="stylesheet" href="../CSS/loading.css">
+    <link rel="stylesheet" href="../CSS/test.css">
+    <link rel="stylesheet" href="../CSS/Header.css">
+    <link rel="stylesheet" href="../CSS/Footer.css">
+    <link rel="stylesheet" href="../CSS/Btn-another.css">
+    <meta name="viewport" content="witdh=divice-witdhn, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="../CSS/swiper/swiper-bundle.min.css">
+</head>
+
+<body class="landding-page">
+    <div id="loader-wapper">
+        <div class="loader"></div>
+    </div>
+    <script>
+        window.addEventListener("load", setTimeout(function (event) {
+            var loader = document.getElementById("loader-wapper");
+            loader.style.opacity = "0";
+            setTimeout(loader.style.display = 'none', 2000)
+        }, 2000));
+
+    </script>
+    <header>
+        <div id="nav-container">
+            <div class="nav-logo">
+                <a href="./LanddingPage.html"><img class="nav-logo__logo" src="../Image/Logo.svg" alt=""></a>
+                <div class="nav-logo__text">
+                    <h2 style="color: rgba(82, 239, 3, 1)">R</h2>
+                    <h2 style="color: rgba(62, 203, 25, 1)">A</h2>
+                    <h2 style="color: rgba(55, 180, 37, 1)">I</h2>
+                    <h2 style="color: rgb(37, 180, 149)">N</h2>
+                    <h2 style="color: rgb(58, 176, 192);">C</h2>
+                    <h2 style="color: rgb(83, 147, 231)">O</h2>
+                    <h2 style="color: rgb(116, 136, 228)">A</h2>
+                    <h2 style="color: rgb(144, 192, 235);">T</h2>
+                </div>
+            </div>
+            <div class="nav-button">
+                <a class="nav-button-item menu">
+                    <img class="logo" id="menu" src="../Image/menu_duo.svg" alt="">
+                    <button id="btnmenu" onclick="Sidebar()">
+                    </button>
+                </a>
+                <a class="nav-button-item shopping">
+                    <img class="logo " src="../Image/Buy.svg" alt="">
+                    <div class="shoping-list">
+
+                    </div>
+                </a>
+                <a class="nav-button-item account" href="../HTML/SignUp.html">
+                    <img class="logo " src="../Image/Profile.svg" alt="">
+                    <img src="../Image/Login.png" alt="" class="account-bar">
+                </a>
+
+                <div class="nav-button-item search">
+                    <img class="logo" src="../Image/Search.svg" alt="" href="facebook.com">
+                    <input class="search-bar " type="text" placeholder="Search something">
+
+                </div>
+            </div>
+            <ul id="sidebar">
+                <li class="sidebar-item" onmouseover="lst_brand()" onmouseout="out_brand()">
+                    <a href="" id="brand">
+                        <h3>Brand</h3>
+                    </a>
+                    <div id="lst-brand" onmouseover="lst_brand()" onmouseout="out_brand()">
+                        <a href="../HTML/AllProduct/AllProduct_Apple.html">
+                            Apple
+                        </a>
+                        <a href="../HTML/AllProduct/AllProduct_Samsung.html">
+                            SamSung
+                        </a>
+                        <a href="../HTML/AllProduct/AllProduct_Google.html">
+                            Google
+                        </a>
+                        <a href="../HTML/AllProduct/AllProduct_Sony.html">
+                            Sony
+                        </a>
+                        <a href="../HTML/AllProduct/AllProduct_Xiaomi.html">
+                            XiaoMi
+                        </a>
+                    </div>
+                </li>
+                <li class="sidebar-item">
+                    <a href="">
+                        <h3>FeedBack</h3>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="">
+                        <h3>Address</h3>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="">
+                        <h3>About Us</h3>
+                    </a>
+                </li>
+                <script src="../JS/LP_select.js"> </script>
+            </ul>
+        </div>
+        <div id="nav-line">
+        </div>
+        <button id="close" onclick="Sidebar()">
+
+        </button>
+    </header>
+    <div id="space">
+    </div>
+    <main>
+        <div class="top">
+            <div class="top-item">
+                <div class="top-swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="../Image/banner mrc.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../Image/banner ny.png" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <script src="../JS/LP_slidetop.js"></script>
+                </div>
+              
+            </div>
+            
+            <div class="top-item">
+                <h4>not just a phone...</h4>
+                <h1>THAT <br> IS <br> TRUELY <br> COMPATION!!!</h1>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-item">
+                <h2>Choose your favorite <br>BRAND!!!</h2>
+            </div>
+            <div class="bottom-content">
+                <ul class="select-bar">
+                    <li id="sony" class="select-bar__item" onclick="popup(2)">
+                        <a href="###">
+                            <img class="logo" src="../Image/Brand-LOGO/sony-2.svg" alt="">
+                        </a>
+                    </li>
+                    <li id="apple" class="select-bar__item" onclick="popup(0)">
+                        <a href="###">
+                            <img class="logo" src="../Image/Brand-LOGO/apple-2 1.svg" alt="">
+                        </a>
+                    </li>
+                    <li id="google" class="select-bar__item" onclick="popup(1)">
+                        <a href="###">
+                            <img class="logo" src="../Image/Brand-LOGO/google-2.svg" alt="">
+                        </a>
+                    </li>
+                    <li id="xiaomi" class="select-bar__item" onclick="popup(3)">
+                        <a href="###">
+                            <img class="logo" src="../Image/Brand-LOGO/xiaomi-3 1.svg" alt="">
+                        </a>
+                    </li>
+                    <li id="samsung" class="select-bar__item" onclick="popup(4)">
+                        <a href="###">
+                            <img class="logo" src="../Image/Brand-LOGO/samsung-2.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="bottom-select-bar">
+                    <div class="slide">
+                        <div id="bg-image">
+                            <img src="../Image/2820007.svg" alt="">
+                        </div>
+                        <div id="iphone" class="swiper-container ">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="../Image/Apple/Frame 4.png" alt=""></div>
+                                <div class="swiper-slide"><img src="../Image/Apple/Frame 5.png" alt=""></div>
+                                <div class="swiper-slide"><img src="../Image/Apple/Frame 6.png" alt=""></div>
+
+                            </div>
+                            <!-- Nếu cần pagination -->
+                            <div class="swiper-pagination"></div>
+                            <script src="../JS/PR_slide.js"></script>
+                        </div>
+                        <div id="pixle" class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="../Image/Pixel/Frame 1.png" alt=""></div>
+                                <div class="swiper-slide"><img src="../Image/Pixel/Frame 2.png" alt=""></div>
+                                <div class="swiper-slide"><img src="../Image/Pixel/Frame 3.png" alt=""></div>
+                            </div>
+                            <!-- Nếu cần pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <button class="shopnow" onclick="window.location.href='.Shop.html'"> Shop Now</button>
+                            <!-- <div class="buynow">
+                                <img class='btn2' src="../Image/Ellipse 1.png"  alt="">
+                                <img class="btn1" src="../Image/Ellipse 2.png"  alt="">
+                                <h4>Shop Now</h4>
+                            </div> -->
+                        </div>
+                        <div id="xperia" class="swiper-container ">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="../Image/Sony/Frame 7.png" alt=""></div>
+                                <div class="swiper-slide"><img src="../Image/Sony/Frame 8.png" alt=""></div>
+                                <div class="swiper-slide"><img src="../Image/Sony/Frame 9.png" alt=""></div>
+
+                            </div>
+                            <!-- Nếu cần pagination -->
+                            <div class="swiper-pagination"></div>
+                            <button class="shopnow">Shop Now</button>
+                        </div>
+                        <div id="mi" class="swiper-container ">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="../Image/XiaoMi/Frame 13.png" alt=""></div>
+                                <div class="swiper-slide"><img src="../Image/XiaoMi/Frame 14.png" alt=""></div>
+                                <div class="swiper-slide"><img src="../Image/XiaoMi/Frame 15.png" alt=""></div>
+
+                            </div>
+                            <!-- Nếu cần pagination -->
+                            <div class="swiper-pagination"></div>
+                            <button class="shopnow">Shop Now</button>
+                        </div>
+                        <div id="galaxy" class="swiper-container ">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide"><img src="../Image/SamSung/Frame 12.png" alt=""></div>
+                                <div class="swiper-slide"><img src="../Image/SamSung/Frame 10.png" alt=""></div>
+                                <div class="swiper-slide"><img src="../Image/SamSung/Frame 11.png" alt=""></div>
+
+                            </div>
+                            <!-- Nếu cần pagination -->
+                            <div class="swiper-pagination"></div>
+                            <button class="shopnow">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="hotproduct">
+                        <img class="hotpr" src="../Image/text/ip.png" alt="" onclick="Shopnow(0)">
+                        <img class="hotpr" src="../Image/text/Group 2.png" alt="" onclick="Shopnow(1)">
+                        <img class="hotpr" src="../Image/text/Group sn.png" alt="" onclick="Shopnow(2)">
+                        <img class="hotpr" src="../Image/text/xm.png" alt="" onclick="Shopnow(3)">
+                        <img class="hotpr" src="../Image/text/ss.png" alt="" onclick="Shopnow(4)">
+                        <img id="shopnow" src="../Image/Shopnow.png" alt="">
+                        <script src="../JS/LP_shopnow.js"></script>
+                        <button class="quit" onclick="Quitshop()"></button>
+                    </div>
+                </div>
+                <div class="another-product">
+
+                    <div class="another">
+
+                        <div class="product">
+                            <img src="../Image/Apple/12/compare_iphone12_black__l71jgcc3vb62_large_2x.jpg" alt="">
+                            <div class="product-text">
+                                <h2>IPHONE 12</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product">
+                            <img src="../Image/Apple/12/compare_iphone12_green__bvg3n0qbwfiu_large_2x.jpg" alt="">
+                            <div class="product-text">
+                                <h2>IPHONE 12</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../Image/Apple/12/compare_iphone12_blue__cs0mfz9i0ec2_large_2x.jpg" alt="">
+                            <div class="product-text">
+                                <h2>IPHONE 12</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="another">
+
+                        <div class="product">
+                            <img src="../Image/Pixel/5.png" alt="">
+                            <div class="product-text">
+                                <h2>PIXLE 5</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product">
+                            <img src="../Image/Pixel/4a.png" alt="">
+                            <div class="product-text">
+                                <h2>PIXLE 4A</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../Image/Pixel/4.webp" alt="">
+                            <div class="product-text">
+                                <h2>PIXLE 4</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="another">
+
+                        <div class="product">
+                            <img src="../Image/Sony/11i.png" alt="">
+                            <div class="product-text">
+                                <h2>XPERIA 1 II</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../Image/Sony/sony-xperia-10-ii-600x600-600x600.png" alt="">
+                            <div class="product-text">
+                                <h2>XPERIA 10 II</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../Image/Sony/sony-xperia-5-white-600x600.png" alt="">
+                            <div class="product-text">
+                                <h2>XPERIA 5</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="another">
+
+                        <div class="product">
+                            <img src="../Image/XiaoMi/specs-img01.png" alt="">
+                            <div class="product-text">
+                                <h2>MI 10 LITE</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product">
+                            <img src="../Image/XiaoMi/specs-header.png" alt="">
+                            <div class="product-text">
+                                <h2 style="font-size: 1.5rem;">MI NOTE 10</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../Image/XiaoMi/specs_header 1.png" alt="">
+                            <div class="product-text">
+                                <h2>MI 9T</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="another">
+
+                        <div class="product">
+                            <img src="../Image/Apple/12/compare_iphone12_black__l71jgcc3vb62_large_2x.jpg" alt="">
+                            <div class="product-text">
+                                <h2>IPHONE 12</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="product">
+                            <img src="../Image/Apple/12/compare_iphone12_green__bvg3n0qbwfiu_large_2x.jpg" alt="">
+                            <div class="product-text">
+                                <h2>IPHONE 12</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <img src="../Image/Apple/12/compare_iphone12_blue__cs0mfz9i0ec2_large_2x.jpg" alt="">
+                            <div class="product-text">
+                                <h2>IPHONE 12</h2>
+                                <h3>1000$</h3>
+                                <div class="product-text-btn">
+                                    <button class="buy">
+                                        Buy
+                                    </button>
+                                    <button class="detail">
+                                        detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="../HTML/AllProduct/AllProduct_Apple.html"><button class="btn btn-1">Another product</button></a>
+            <a href="../HTML/AllProduct/AllProduct_Google.html"><button class="btn btn-1">Another product</button></a>
+            <a href="../HTML/AllProduct/AllProduct_Sony.html"><button class="btn btn-1">Another product</button></a>
+            <a href="../HTML/AllProduct/AllProduct_Xiaomi.html"><button class="btn btn-1">Another product</button></a>
+            <a href="../HTML/AllProduct/AllProduct_Samsung.html"><button class="btn btn-1">Another product</button></a>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-item">
+                <h3>RainCoat Company</h3>
+                <img src="../Image/Logo.svg" alt="">
+            </div>
+            <div class="footer-item">
+                <h3>Contact</h3>
+                <div class="contact-list">
+                    <p>Address: Nowhere/...</p><br>
+                    <p>Phone: 0123023213</p><br>
+                    <p>Email: raincoat@gmail.com</p><br>
+                    <p>Fax: 0123023213</p><br>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3>Partner</h3>
+                <div class="partner-item">
+                    <img src="../Image/Brand-LOGO/apple-2 1.svg" alt="" style="margin-left: 1px;">
+                    <p>
+                        Apple
+                    </p>
+                </div>
+                <div class="partner-item">
+                    <img src="../Image/Brand-LOGO/google-2.svg" alt="" style="margin-left: 3px;">
+                    <p>
+                        Google
+                    </p>
+                </div>
+                <div class="partner-item">
+                    <img src="../Image/Apple/logo-2.png" alt="">
+                    <p>
+                        HUFLIT
+                    </p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3>SUPPORT</h3>
+                <div class="partner-item">
+                    <img src="../Image/Visa.png" alt="" style="margin-left: 1px;">
+                    <p>
+                        Visa
+                    </p>
+                </div>
+                <div class="partner-item">
+                    <img src="../Image/Paypal.png" alt="" style="margin-left: 3px;">
+                    <p>
+                        PayPal
+                    </p>
+                </div>
+                <div class="partner-item">
+                    <img src="../Image/MoMo_Logo.png" alt="">
+                    <p>
+                        Momo
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../JS/LP_slide.js"></script>
+    <script src="../JS/LP_selectbrand.js"></script>
+</body>
+
+</html>

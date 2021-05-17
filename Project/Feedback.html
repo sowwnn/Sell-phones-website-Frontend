@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="vi">
+    <link rel="shortcut icon" href="../../../Image/favicon.ico" />
+    <title>RainCoat - Sign Up</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../CSS/SignUp.css">
+    <link rel="stylesheet" href="../CSS/loading.css">
+    <link rel="stylesheet" href="../CSS/Btn-another.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="loader-wapper">
+        <div class="loader"></div>
+    </div>
+    <script>
+        window.addEventListener("load", setTimeout(function (event) {
+            var loader = document.getElementById("loader-wapper");
+            loader.style.opacity = "0";
+            setTimeout(loader.style.display = 'none', 2000)
+        }, 2000));
+
+    </script>
+    <div class="sidebanner">
+        <a href="../HTML/LanddingPage.html">
+            <div class="text">
+                <h2 style="color: rgba(82, 239, 3, 1)">R</h2>
+                <h2 style="color: rgba(62, 203, 25, 1)">A</h2>
+                <h2 style="color: rgba(55, 180, 37, 1)">I</h2>
+                <h2 style="color: rgb(37, 180, 149)">N</h2>
+                <h2 style="color: rgb(58, 176, 192);">C</h2>
+                <h2 style="color: rgb(83, 147, 231)">O</h2>
+                <h2 style="color: rgb(116, 136, 228)">A</h2>
+                <h2 style="color: rgb(144, 192, 235);">T</h2>
+            </div>
+            <img src="../Image/Logo.svg" alt="">
+        </a>
+    </div>
+    <main>
+        <br>
+        <div id="feedback">
+            <h1>Feed Back</h1>
+            <textarea id="feedbbox"></textarea>
+            <button class="btn">
+                Submit
+            </button>
+        </div>
+       
+    </main>
+</body>
+
+</html>
